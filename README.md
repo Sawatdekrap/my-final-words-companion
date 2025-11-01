@@ -1,3 +1,7 @@
+# My Final Words Companion Site
+
+Just a site with some utilities for playing the game "My Final Words"
+
 ## Resources
 
 ### Animation examples
