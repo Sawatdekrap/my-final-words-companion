@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Final Words Companion</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="page">
+        <div class="page-top-container">
+            <h1><span class="title-offset-container"><span class="title-offset">My</span></span>Final Words</h1>
+        </div>
+        <div class="page-body-container">
+            <div class="timer-container stagger-in">
+                <div id="timer-display" class="timer-display">5:00</div>
+                <div class="timer-controls">
+                    <img id="play-icon" class="hover-icon" src="public/icons/play.svg" alt="play" role="button" onclick="pressPlay()">
+                    <img id="pause-icon" style="display: none;" class="hover-icon" src="public/icons/pause.svg" alt="pause" role="button" onclick="pressPause()">
+                    <img id="reset-icon" class="hover-icon" src="public/icons/reset.svg" alt="reset" role="button" onclick="pressReset()">
+                </div>
+            </div>
+            <div class="dice-container stagger-in">
+                <div id="dice-value" class="dice-value" role="button" onclick="rollDice()">8</div>
+            </div>
+            <a
+                href="https://chatgpt.com/?q=You+are+investigator+in+a+game+to+determine+murder%2C+weapon%2C+witness%2C+evidence%2C+receiver%2C+inheritance+from+pic+of+letter+from+victim.+Writing+is+less+coherent+close+to+death.+Give+reasoning.+Ready%3F"
+                target="_blank"
+                class="solo-container stagger-in" role="button" onclick="pressSolo()"
+            >
+                <img src="public/icons/solo.svg" alt="solo">
+                <div class="solo-text">Solo Mode</div>
+            </a>
+        </div>
+        <div class="page-bottom-container">
+            <div class="footer-container stagger-in">
+                <a href="https://www.instagram.com/mattsideabox/" target="_blank">
+                    <img class="social-icon hover-icon" src="public/icons/instagram.svg" alt="instagram">
+                </a>
+                <a href="https://www.tiktok.com/@mattsideabox" target="_blank">
+                    <img class="social-icon hover-icon" src="public/icons/tiktok.svg" alt="tiktok">
+                </a>
+                <a href="https://www.youtube.com/@mattsideabox" target="_blank">
+                    <img class="social-icon hover-icon" src="public/icons/youtube.svg" alt="youtube">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="help-button hover-icon">
+        <img class="social-icon hover-icon" src="public/icons/help.svg" alt="help" role="button" onclick="openHelpModal()">
+    </div>
+    <div id="help-modal-background" class="help-modal-background" style="display: none;" onclick="closeHelpModal()">
+        <div id="help-modal" class="help-modal" style="display: none;" onclick="event.stopPropagation()">
+            <div class="close-icon-container">
+                <img id="close-icon" class="close-icon" src="public/icons/close.svg" alt="close" role="button" onclick="closeHelpModal()">
+            </div>
+            <div class="help-modal-content">
+                <h2>What is this?</h2>
+                <p>Who knows? This section is coming soon...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
