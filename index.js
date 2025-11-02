@@ -86,7 +86,7 @@ function openHelpModal() {
   animate(
     helpModal,
     { y: ["100vh", 0] },
-    { duration: 1.0, type: "spring", bounce: 0.75 }
+    { duration: 0.5, type: "spring", bounce: 0.25 }
   );
 }
 
@@ -99,7 +99,7 @@ function closeHelpModal() {
   animate(
     helpModal,
     { y: [0, "100vh"] },
-    { duration: 1.0, type: "spring", bounce: 0.75 }
+    { duration: 0.5, type: "spring", bounce: 0.25 }
   );
 }
 
