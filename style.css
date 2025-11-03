@@ -204,11 +204,13 @@ h1 {
     top: 0;
     left: 0;
     height: fit-content;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     &:hover {
         cursor: default;
     }
     /* TODO Not this */
-    max-width: 90vw;
+    max-width: 50rem;
 }
 
 .help-modal-content {
