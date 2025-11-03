@@ -67,7 +67,7 @@ h1 {
     margin-right: 2rem;
 
     @media (width <= 425px) {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     @media (425px < width <= 768px) {
