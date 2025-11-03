@@ -43,6 +43,18 @@ body {
     top: -1rem;
     left: -2rem;
     transform: rotate(-30deg);
+
+    @media (width <= 375px) {
+        font-size: 1rem;
+        top: -0.5rem;
+        left: -1rem;
+    }
+
+    @media (375px < width <= 425px) {
+        font-size: 1rem;
+        top: -0.75rem;
+        left: -0.5rem;
+    }
 }
 
 h1 {
@@ -53,6 +65,14 @@ h1 {
     margin-bottom: 0;
     margin-left: 2rem;
     margin-right: 2rem;
+
+    @media (width <= 375px) {
+        font-size: 3rem;
+    }
+
+    @media (375px < width <= 425px) {
+        font-size: 4rem;
+    }
 }
 
 .timer-container {
@@ -69,6 +89,10 @@ h1 {
     text-align: right;
     user-select: none;
     padding-top: 1rem;
+
+    @media (max-width: 768px) {
+        font-size: 4rem;
+    }
 }
 
 
@@ -80,12 +104,22 @@ h1 {
     img {
         width: 4rem;
         height: 4rem;
+
+        @media (max-width: 768px) {
+            width: 2rem;
+            height: 2rem;
+        }
     }
 }
 
 .dice-container {
     margin-top: 4rem;
     margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .dice-value {
@@ -112,12 +146,21 @@ h1 {
     img {
         width: 4rem;
         height: 4rem;
+
+        @media (max-width: 768px) {
+            width: 2rem;
+            height: 2rem;
+        }
     }
 }
 
 .solo-text {
     font-size: 5rem;
     padding-top: 1rem;
+
+    @media (max-width: 768px) {
+        font-size: 2rem;
+    }
 }
 
 .footer-container {
@@ -140,13 +183,14 @@ h1 {
 
 .help-modal-background {
     display: flex;
-    align-items: center;
     justify-content: center;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: scroll;
     backdrop-filter: blur(10px);
     &:hover {
         cursor: pointer;
@@ -159,6 +203,7 @@ h1 {
     padding: 1rem;
     top: 0;
     left: 0;
+    height: fit-content;
     &:hover {
         cursor: default;
     }
